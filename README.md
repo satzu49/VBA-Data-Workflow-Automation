@@ -1,11 +1,17 @@
-# VBA Data Automation Scripts
+# VBA Data Workflow Automation: Batch Reporting Pipeline
 
-## Overview
-This repository contains the VBA (Visual Basic for Applications) scripts I developed to automate large-scale data processing and cross-reference validation. 
+## 📌 Overview
+This repository contains a VBA automation script designed to streamline enterprise-scale data reporting. It processes master datasets, dynamically extracts unique commercial entities, sanitizes data strings, and programmatically generates filtered PDF reports.
 
-## Key Features
-- **Data Reconciliation:** Automated cross-referencing for over 10,000+ operational records using advanced logic.
-- **Workflow Automation:** Replaced manual data entry with programmatic data cleaning and formatting.
-- **Efficiency Impact:** Reduced processing time by 40% and saved approximately 10+ hours per week in data operations.
+## 🛠️ Key Technical Features
+- **Algorithm Efficiency:** Utilizes `Scripting.Dictionary` for fast, memory-efficient extraction of unique data points (e.g., Commercial Names) across large datasets.
+- **Data Sanitization:** Programmatically cleanses target strings by utilizing `Replace` functions to remove illegal system characters, preventing runtime errors during file generation.
+- **Memory Optimization:** Implements `Application.ScreenUpdating = False` and `DisplayAlerts = False` to minimize CPU and memory overhead during batch loop processing.
+- **Dynamic Filtering & Export:** Programmatically loops through dynamically filtered ranges and executes batch PDF exports native to the Excel environment.
 
-*Note: For confidentiality and compliance, all sensitive company data and proprietary variables have been anonymized or removed from these scripts.*
+## 🚀 Business Impact
+- Replaces repetitive manual data segmentation and exporting tasks.
+- Eliminates human error in data matching and file nomenclature.
+- Scalable logic that saves approximately 10+ hours per week in cross-regional operational reporting workflows.
+
+*Note: All proprietary company data and specific business variables have been omitted or anonymized for compliance purposes.*
